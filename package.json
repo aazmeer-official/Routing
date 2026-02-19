@@ -1,0 +1,26 @@
+{
+  "name": "routing",
+  "version": "1.0.0",
+  "description": "We are gonna use EJS ,NODEJS, SQL and make a CRUD app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aazmeer-official/Routing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/aazmeer-official/Routing/issues"
+  },
+  "homepage": "https://github.com/aazmeer-official/Routing#readme",
+  "dependencies": {
+    "@faker-js/faker": "^10.3.0",
+    "express": "^5.2.1",
+    "sql2": "^0.0.1"
+  }
+}
