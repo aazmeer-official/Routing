@@ -20,8 +20,11 @@
   "homepage": "https://github.com/aazmeer-official/Routing#readme",
   "dependencies": {
     "@faker-js/faker": "^10.3.0",
+    "ejs": "^3.0.2",
     "express": "^5.2.1",
     "method-override": "^3.0.0",
-    "sql2": "^0.0.1"
+    "mysql2": "^3.17.3",
+    "sql2": "^0.0.1",
+    "uuid": "^13.0.0"
   }
 }

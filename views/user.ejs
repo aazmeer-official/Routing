@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users Here</title>
+</head>
+<body>
+<table border="1px solid black">
+  <tr>
+    <th>Id</th>
+    <th>Username</th>
+    <th>Email</th>
+  </tr>
+  
+    <% for ( results of result) { %>
+    <tr>
+
+    <td><%= results.id %></td>
+    <td><%= results.username %></td>
+    <td><%= results.email %></td>
+    <td><form action="/user/<%=results.id %>" method="get"><button>Click to Edit</button></form>
+    </td>
+    <td><form action="/user/<%=results.id %>?_method=DELETE" method="POST"><button>Click to DELETE</button></form>
+    </td>
+</tr>
+    <% } %> 
+</table>
+
+<h1>Add a New User</h1>
+<form action="/user" method="post">
+    <input type="text" name="username" id="username" placeholder="Enter Username">
+    <input type="text" name="email" id="email" placeholder="Enter Email">
+    <input type="password" name="password" id="password" placeholder="Enter password">
+    <button type="submit">Add a New User</button>
+</form>
+</body>
+</html>
